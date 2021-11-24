@@ -4,7 +4,7 @@ set -e
 
 # util function to print a timestamped message with the scripts name
 msg() {
-    echo "[backup-daily] $0 $1"
+    echo "[backup-daily] $(date --iso-8601=s) $1"
 }
 
 fail() {

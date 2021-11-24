@@ -2,7 +2,7 @@
 
 # util function to print a timestamped message with the scripts name
 msg() {
-    echo "[backup-sync] $0 $1"
+    echo "[backup-sync] $(date --iso-8601=s) $1"
 }
 
 fail() {
