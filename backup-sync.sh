@@ -33,6 +33,6 @@ msg "done"
 msg "uploading to remotes"
 for remote in "$@"; do
     msg "uploading to $remote"
-    rclone sync "$BACKUP_ARCHIVE" "$remote"
+    rclone copyto "$BACKUP_ARCHIVE" "$remote"
     msg "done"
 done
